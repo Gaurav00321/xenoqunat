@@ -3,8 +3,7 @@ import Navbar from "@/components/navbar";
 import Hero from "@/components/Hero";
 import { Brands } from "@/components/Brands";
 import { FocusCardsDemo } from "@/components/Influencer";
-import { StickyScrollRevealDemo } from "@/components/team";
-import { HeroParallax } from "@/components/ui/hero-parallax";
+import Team from "@/components/team";
 import { HeroParallaxDemo } from "@/components/case-study";
 
 export default function Home() {
@@ -12,7 +11,7 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero/>
-      <StickyScrollRevealDemo />
+      <Team />
       <Brands />
       <FocusCardsDemo />
       <HeroParallaxDemo />

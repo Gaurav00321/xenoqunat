@@ -6,14 +6,16 @@ export default function Hero() {
             {/* Left Side: Text Content */}
             <div className="lg:w-1/2 text-center lg:text-left">
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-                    Best <span className="text-[rgb(91,208,31)]">Influencer Marketing</span>
-                    <br /> Agency in India
+                Connecting <span className="text-[rgb(91,208,31)]"> Brands </span>
+                    <br /> With  
+                    <span className="text-[rgb(91,208,31)]"> Influencer </span>
                 </h1>
                 <p className="mt-4 text-lg text-gray-300">
-                    XenoQuant is the best Influencer marketing agency in India, providing
-                    top influencer marketing platforms to help brands and visionary
-                    marketers leverage social media influencers' content in marketing
-                    and advertising their products/services.
+                    XenoQuant is an influencer marketing agency that connects brands with influencers while creating the best ROI for both parties.
+                    <br/>
+                    With a network of 65+ creators and 25+ brands,
+                    <br/>
+                    we are ready to collaborate with you.
                 </p>
                 <Link href="/contact">
                     <button className="mt-6 px-6 py-3 text-lg font-semibold bg-[rgb(91,208,31)] rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:bg-gradient-to-r from-green-500 to-green-700">

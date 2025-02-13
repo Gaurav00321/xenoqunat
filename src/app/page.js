@@ -1,3 +1,4 @@
+
 import Navbar from "@/components/navbar";
 import Hero from "@/components/Hero";
 import { Brands } from "@/components/Brands";

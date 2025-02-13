@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import { Brands } from "@/components/Brands";
 import { FocusCardsDemo } from "@/components/Influencer";
 import Team from "@/components/team";
+import { HeroParallaxDemo } from "@/components/case-study";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Team />
       <Brands />
       <FocusCardsDemo />
+      <HeroParallaxDemo />
     </main>
   );
 }

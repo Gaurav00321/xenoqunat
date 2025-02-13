@@ -18,13 +18,16 @@ export const StickyScroll = ({ content, contentClassName }) => {
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
     const cardsBreakpoints = content.map((_, index) => index / cardLength);
-    const closestBreakpointIndex = cardsBreakpoints.reduce((acc, breakpoint, index) => {
-      const distance = Math.abs(latest - breakpoint);
-      if (distance < Math.abs(latest - cardsBreakpoints[acc])) {
-        return index;
-      }
-      return acc;
-    }, 0);
+    const closestBreakpointIndex = cardsBreakpoints.reduce(
+      (acc, breakpoint, index) => {
+        const distance = Math.abs(latest - breakpoint);
+        if (distance < Math.abs(latest - cardsBreakpoints[acc])) {
+          return index;
+        }
+        return acc;
+      },
+      0
+    );
     setActiveCard(closestBreakpointIndex);
   });
 
@@ -39,7 +42,9 @@ export const StickyScroll = ({ content, contentClassName }) => {
     "linear-gradient(to bottom right, var(--orange-500), var(--yellow-500))",
   ];
 
-  const [backgroundGradient, setBackgroundGradient] = useState(linearGradients[0]);
+  const [backgroundGradient, setBackgroundGradient] = useState(
+    linearGradients[0]
+  );
 
   useEffect(() => {
     setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
@@ -50,26 +55,31 @@ export const StickyScroll = ({ content, contentClassName }) => {
       animate={{
         backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       }}
+      className="h-[30rem] overflow-y-auto overflow-hidden flex justify-center relative space-x-10 rounded-md p-10"
       ref={ref}
-      className="h-[30rem]  overflow-y-scroll scrollbar-hidden flex justify-center relative space-x-10 p-10"
     >
-      <h1 className="scroll-m-20 text-4xl font-bold tracking-tight text-black dark:text-white">
-        Our Team
-      </h1>
       <div className="div relative flex items-start px-4">
         <div className="max-w-2xl">
           {content.map((item, index) => (
             <div key={item.title + index} className="my-20">
               <motion.h2
-                initial={{ opacity: 0 }}
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                initial={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: activeCard === index ? 1 : 0.3,
+                }}
                 className="text-2xl font-bold text-slate-100"
               >
                 {item.title}
               </motion.h2>
               <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                initial={{
+                  opacity: 0,
+                }}
+                animate={{
+                  opacity: activeCard === index ? 1 : 0.3,
+                }}
                 className="text-kg text-slate-300 max-w-sm mt-10"
               >
                 {item.description}

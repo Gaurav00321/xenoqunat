@@ -3,6 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
+import { AnimatedModalDemo } from "./ui/Contact-Button";
 
 export default function Navbar() {
   return (
@@ -27,11 +28,7 @@ export default function Navbar() {
           <NavItem title="Home" />
           <NavItem title="Services" dropdown />
           <NavItem title="Clients" dropdown />
-          <Link href="/contact">
-            <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg">
-              Contact Us
-            </button>
-          </Link>
+            <AnimatedModalDemo />
         </div>
       </div>
     </nav>

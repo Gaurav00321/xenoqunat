@@ -49,7 +49,7 @@ export function Brands() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-10xl font-medium tracking-tight text-transparent md:text-7xl">
+        className="text-[5.5rem] mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center font-medium tracking-tight text-transparent md:text-7xl">
         Bring your Brands <br /> to Spotlight
       </motion.h1>
 

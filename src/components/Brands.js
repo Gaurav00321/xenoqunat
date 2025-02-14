@@ -49,11 +49,11 @@ export function Brands() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl">
-        Build lamps <br /> the right way
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-10xl font-medium tracking-tight text-transparent md:text-7xl">
+        Bring your Brands <br /> to Spotlight
       </motion.h1>
 
-      <div className="h-[40rem] rounded-md flex flex-col antialiased bg-[#020617] items-center justify-center relative overflow-hidden">
+      <div className="h-[40rem] rounded-md flex flex-col antialiased bg-[rgb(2 6 23 / 0%)] items-center justify-center relative overflow-hidden">
       <InfiniteMovingCards
         items={testimonials}
         direction="right"

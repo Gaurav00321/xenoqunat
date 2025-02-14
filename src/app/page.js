@@ -8,7 +8,7 @@ import { HeroParallaxDemo } from "@/components/case-study";
 
 export default function Home() {
   return (
-    <main>
+    <main className="bg-[#020617]">
       <Navbar />
       <Hero/>
       <Team />

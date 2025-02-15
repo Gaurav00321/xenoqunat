@@ -121,28 +121,28 @@ export const ModalBody = ({
   );
 };
 
-export const ModalContent = ({
-  children,
-  className
-}) => {
-  return (
-    (<div className={cn("flex flex-col flex-1 p-8 md:p-10", className)}>
-      {children}
-    </div>)
-  );
-};
+// export const ModalContent = ({
+//   children,
+//   className
+// }) => {
+//   return (
+//     (<div className={cn("flex flex-col flex-1 p-8 md:p-10", className)}>
+//       {children}
+//     </div>)
+//   );
+// };
 
-export const ModalFooter = ({
-  children,
-  className
-}) => {
-  return (
-    (<div
-      className={cn("flex justify-end p-4 bg-gray-100 dark:bg-neutral-900", className)}>
-      {children}
-    </div>)
-  );
-};
+// export const ModalFooter = ({
+//   children,
+//   className
+// }) => {
+//   return (
+//     (<div
+//       className={cn("flex justify-end p-4 bg-gray-100 dark:bg-neutral-900", className)}>
+//       {children}
+//     </div>)
+//   );
+// };
 
 const Overlay = ({
   className

@@ -9,14 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^14.2.15",
+    "@radix-ui/react-label": "^2.1.2",
+    "@radix-ui/react-navigation-menu": "^1.2.5",
+    "@tabler/icons-react": "^3.30.0",
     "clsx": "^2.1.1",
-    "motion": "^12.4.2",
+    "lucide-react": "^0.475.0",
+    "motion": "^12.4.3",
     "next": "15.1.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "tailwind-merge": "^3.0.1",
-    "@next/font" : "^14.2.15",
-    "lucide-react": "^0.475.0"
+    "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

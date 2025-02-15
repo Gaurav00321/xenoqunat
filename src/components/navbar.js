@@ -7,7 +7,7 @@ import { AnimatedModalDemo } from "./ui/Contact-Button";
 
 export default function Navbar() {
   return (
-    <nav className="bg-black text-white px-6 py-4 shadow-md font-geist">
+    <nav className="bg-black text-white px-6 py-2 shadow-md font-geist">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="w-10 h-10">
@@ -28,7 +28,7 @@ export default function Navbar() {
           <NavItem title="Home" />
           <NavItem title="Services" dropdown />
           <NavItem title="Clients" dropdown />
-            <AnimatedModalDemo />
+          <AnimatedModalDemo />
         </div>
       </div>
     </nav>

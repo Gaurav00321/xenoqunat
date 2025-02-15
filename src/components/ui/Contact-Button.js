@@ -19,7 +19,7 @@ export function AnimatedModalDemo() {
     "https://images.unsplash.com/photo-1546484475-7f7bd55792da?q=80&w=2581&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   ];
   return (
-    (<div className="py-40  flex items-center justify-center">
+    (<div className="py-2 flex items-center justify-center">
       <Modal>
         <ModalTrigger
           className="bg-black dark:bg-white dark:text-black text-white flex justify-center group/modal-btn">

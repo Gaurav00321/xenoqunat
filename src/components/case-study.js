@@ -22,7 +22,7 @@ export const products = [
     title: "AM_Flash_Gamer",
     link: "https://www.youtube.com/@amflashgamer",
     thumbnail:
-      "/AM Flash Gamer.png",
+      "/AM_Flash_Gamer.png",
   },
 
   {
@@ -37,6 +37,4 @@ export const products = [
     thumbnail:
       "/Preet_X.png",
   },
-
-  
 ];

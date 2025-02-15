@@ -28,5 +28,5 @@ export function AnimatedModalDemo() {
         </ModalBody>
       </Modal>
     </div>)
-  );
+  ); 
 }

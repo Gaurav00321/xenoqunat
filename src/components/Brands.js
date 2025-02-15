@@ -39,27 +39,29 @@ const testimonials = [
 
 
 export function Brands() {
-  return (
-    (<LampContainer>
-      <motion.h1
-        initial={{ opacity: 0.5, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="text-[5.5rem] mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center font-medium tracking-tight text-transparent md:text-7xl">
-        Bring your Brands <br /> to Spotlight
-      </motion.h1>
+  return (<>
+      <LampContainer>
+        <motion.h1
+          initial={{ opacity: 0.5, y: 100 }}
+          whileInView={{ opacity: 1, y: -10 }}
+          transition={{
+            delay: 0.3,
+            duration: 1,
+            ease: "easeInOut",
+          }}
+          className="text-[6.5rem] mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center font-medium tracking-tight text-transparent md:text-7xl">
+          Bring your Brands <br /> to Spotlight
+        </motion.h1>
 
-      <div className="h-[40rem] rounded-md flex flex-col antialiased bg-[rgb(2 6 23 / 0%)] items-center justify-center relative overflow-hidden">
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
-    </LampContainer>)
-  );
+
+      </LampContainer>
+      <div className="h-[30rem] rounded-md flex flex-col antialiased bg-[rgb(2 6 23 / 0%)] items-center justify-center relative overflow-hidden">
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="right"
+          speed="slow"
+        />
+      </div>
+    </>
+    )
 }

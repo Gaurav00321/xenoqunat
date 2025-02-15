@@ -19,7 +19,8 @@ export const products = [
   {
     title: "AM_Flash_Gamer",
     link: "https://www.youtube.com/@amflashgamer",
-    thumbnail: "/AM_Flash_Gamer.png",
+    thumbnail:
+      "/AM_Flash_Gamer.png",
   },
 
   {

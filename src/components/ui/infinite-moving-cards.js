@@ -76,6 +76,14 @@ export const InfiniteMovingCards = ({
             }}
             key={item.name}>
             <blockquote>
+
+              <span className="flex flex-col gap-1">
+                <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
+                  {item.title}
+                </span>
+              </span>
+
+
               <div
                 aria-hidden="true"
                 className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"></div>

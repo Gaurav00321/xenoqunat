@@ -7,7 +7,7 @@ import { AnimatedModalDemo } from "./ui/Contact-Button";
 
 export default function Navbar() {
   return (
-    <nav className="bg-[rgba(17,25,40,0.75)] fixed w-full z-[100]  saturate-180 border border-white/10 rounded-b-xl px-6 py-2 shadow-md font-geist">
+    <nav className="bg-[rgba(17,25,40,0.75)] backdrop-blur-sm fixed w-full z-[100]  saturate-180 border border-white/10 rounded-b-xl px-6 py-2 shadow-md font-geist">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="w-10 h-10">
